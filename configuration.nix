@@ -131,8 +131,6 @@
     jetbrains.pycharm
     jetbrains.idea
     jetbrains.clion
-    jetbrains.rust-rover
-    jetbrains.ruby-mine
     vscode
     git
     sublime4
