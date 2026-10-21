@@ -157,7 +157,6 @@
     mesa-demos
     gnome-network-displays
     samba
-    virtualbox
   ];
 
   # Fontovi
@@ -171,6 +170,11 @@
 
   # Neki sistemski programi
   programs.zsh.enable = true;
+
+  # VirtualBox
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  users.extraGroups.vboxusers.members = [ "gregor" ];
 
   # Autodelete za stare generacije
   nix.gc = {
