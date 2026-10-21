@@ -157,6 +157,7 @@
     mesa-demos
     gnome-network-displays
     samba
+    virtualbox
   ];
 
   # Fontovi
