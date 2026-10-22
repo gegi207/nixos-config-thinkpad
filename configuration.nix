@@ -122,6 +122,8 @@
     spotify
     guvcview
     obs-studio
+    proton-vpn
+    qbittorrent
 
     # Office programi
     thunderbird
