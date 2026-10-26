@@ -172,6 +172,14 @@
 
   # Neki sistemski programi
   programs.zsh.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc.lib
+      zlib
+      openssl
+    ];
+  };
 
   # VirtualBox
   virtualisation.virtualbox.host.enable = true;
