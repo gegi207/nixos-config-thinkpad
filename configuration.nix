@@ -159,6 +159,7 @@
     mesa-demos
     gnome-network-displays
     samba
+    lsof
   ];
 
   # Fontovi
