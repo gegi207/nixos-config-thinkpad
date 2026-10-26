@@ -140,6 +140,7 @@
     gcc
     gdb
     gnumake
+    jdk25
 
     # Gaming
     steam
