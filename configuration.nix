@@ -127,7 +127,7 @@
 
     # Office programi
     thunderbird
-    libreoffice
+    libreoffice-qt
 
     # Programi za programiranje
     jetbrains.pycharm
