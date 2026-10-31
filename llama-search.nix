@@ -34,10 +34,10 @@ in
   services.llama-cpp = {
     enable = true;
     openFirewall = true;
-    model = "/srv/models/K2-Horizon-4B-Q4_K_M.gguf";
+    model = "/srv/models/Qwen3.5-4B-Q4_K_M.gguf";
     host = "0.0.0.0";
     port = 8080;
-    extraFlags = [ "--jinja" "-t" "4" "-c" "16384" "--ui-mcp-proxy" ];
+    extraFlags = [ "--jinja" "-t" "4" "-c" "8192" "--ui-mcp-proxy" ];
   };
 
   systemd.services.search-mcp = {
