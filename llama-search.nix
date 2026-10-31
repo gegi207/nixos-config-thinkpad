@@ -33,7 +33,8 @@ in
 {
   services.llama-cpp = {
     enable = true;
-    model = "/srv/models/LFM2.5-24B-A2B-Q4_K_m.gguf";
+    openFirewall = true;
+    model = "/srv/models/K2-Horizon-4B-Q4_K_M.gguf";
     host = "0.0.0.0";
     port = 8080;
     extraFlags = [ "--jinja" "-t" "4" "-c" "16384" "--ui-mcp-proxy" ];
