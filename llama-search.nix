@@ -34,9 +34,9 @@ in
   services.llama-cpp = {
     enable = true;
     model = "/srv/models/LFM2.5-24B-A2B-Q4_K_m.gguf";
-    host = "127.0.0.1";
+    host = "0.0.0.0";
     port = 8080;
-    extraFlags = [ "--jinja" "-t" "8" "-c" "16384" "--ui-mcp-proxy" ];
+    extraFlags = [ "--jinja" "-t" "4" "-c" "16384" "--ui-mcp-proxy" ];
   };
 
   systemd.services.search-mcp = {
