@@ -3,6 +3,7 @@
 {
   imports = [ 
     ./hardware-configuration.nix
+    ./llama-search.nix
   ];
 
   # Koristi systemd-boot
@@ -136,7 +137,6 @@
     vscode
     git
     sublime4
-    llama-cpp
     gcc
     gdb
     gnumake
