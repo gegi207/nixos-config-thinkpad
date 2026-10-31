@@ -136,7 +136,7 @@
     vscode
     git
     sublime4
-    lmstudio
+    llama-cpp
     gcc
     gdb
     gnumake
