@@ -40,6 +40,16 @@ in
     extraFlags = [ "--jinja" "-t" "4" "-c" "8192" "--ui-mcp-proxy" ];
   };
 
+  services.llama-cpp.package = pkgs.llama-cpp.overrideAttrs (old: {
+    cmakeFlags = (old.cmakeFlags or [ ]) ++ [
+      "-DGGML_NATIVE=OFF"
+      "-DGGML_AVX=ON"
+      "-DGGML_AVX2=ON"
+      "-DGGML_FMA=ON"
+      "-DGGML_F16C=ON"
+     ];
+  });
+
   systemd.services.search-mcp = {
       description = "Tavily MCP bridge";
       # wantedBy = [ "multi-user.target" ];
