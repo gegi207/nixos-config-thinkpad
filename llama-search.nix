@@ -37,7 +37,9 @@ in
     model = "/srv/models/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf";
     host = "0.0.0.0";
     port = 8080;
-    extraFlags = [ "--jinja" "-t" "4" "-c" "8192" "--ui-mcp-proxy" ];
+    extraFlags = [ 
+    "--jinja" "-t" "4" "-c" "8192" "--reasoning" "off" "--ui-mcp-proxy" 
+    "--temp" "0.7" "--top-p" "0.8" "--top-k" "20" "--min-p" "0" "--presence-penalty" "1.5" ];
   };
 
   services.llama-cpp.package = pkgs.llama-cpp.overrideAttrs (old: {
