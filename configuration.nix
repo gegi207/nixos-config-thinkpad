@@ -6,17 +6,24 @@
     ./llama-search.nix
   ];
 
-  # Koristi systemd-boot
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  # Boot postavke
+  boot = {
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+    plymouth.enable = true;
+    plymouth.theme = "spinner";
+    kernelParams = [
+      "quiet"
+      "splash"
+      # Fixovi za freezeove
+      "i915.enable_psr=0"      
+      "i915.enable_dc=0"       
+      "i915.enable_fbc=0"      
+      "intel_idle.max_cstate=2"
+    ];
+    consoleLogLevel = 3;
+  };
 
-  # Fixovi za freezeove
-  boot.kernelParams = [
-    "i915.enable_psr=0"      
-    "i915.enable_dc=0"       
-    "i915.enable_fbc=0"      
-    "intel_idle.max_cstate=2"
-  ];
   hardware.enableRedistributableFirmware = true;
   hardware.cpu.intel.updateMicrocode = true;
 
