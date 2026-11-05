@@ -11,7 +11,7 @@
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
     plymouth.enable = true;
-    plymouth.theme = "glow";
+    plymouth.theme = "bgrt";
     kernelParams = [
       "quiet"
       "splash"
