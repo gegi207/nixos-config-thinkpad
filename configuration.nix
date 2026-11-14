@@ -123,6 +123,7 @@
     hardinfo2
     wayland-utils
     wl-clipboard
+    nicotine-plus
     
     # Korisni programi
     vlc
