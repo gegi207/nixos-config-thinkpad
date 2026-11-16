@@ -43,6 +43,7 @@
 
   # Servisi
   services = {
+    usbmuxd.enable = true;
     fwupd.enable = true;
     journald.extraConfig = "SyncIntervalSec=10s";
     openssh.enable = true;
@@ -169,6 +170,8 @@
     gnome-network-displays
     samba
     lsof
+    libimobiledevice
+    ifuse
   ];
 
   # Fontovi
