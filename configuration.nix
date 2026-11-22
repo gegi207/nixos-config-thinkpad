@@ -112,6 +112,7 @@
   # Bluetooth driveri
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
 
   # Ovo kao treba da neke stvari rade
   nixpkgs.config.permittedInsecurePackages = [
