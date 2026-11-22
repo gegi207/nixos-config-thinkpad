@@ -194,7 +194,7 @@
     liberation_ttf_v2
     helvetica-neue-lt-std
     dejavu_fonts
-    noto-fonts
+    nerd-fonts.meslo-lg
   ];
   fonts.fontDir.enable = true;
 
