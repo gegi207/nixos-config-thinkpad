@@ -185,6 +185,7 @@
     lsof
     libimobiledevice
     ifuse
+    xfce4-battery-plugin
   ];
 
   # Fontovi
