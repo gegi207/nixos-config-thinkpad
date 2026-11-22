@@ -82,7 +82,20 @@
         };  
       };
     };
-  };  
+  };
+
+  ## XFCE TESTING BEGIN
+
+  services.xserver = {
+    enable = true;
+    desktopManager = {
+      xterm.enable = false;
+      xfce.enable = true;
+    };
+  };
+  services.displayManager.defaultSession = "xfce";  
+
+  ## XFCE TESTING END
 
   # Dopustenje za propriatery programe
   nixpkgs.config.allowUnfree = true;
